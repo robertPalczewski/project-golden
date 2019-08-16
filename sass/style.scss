@@ -9,13 +9,13 @@ body {
   margin: 0;
 }
 
-.container {
+section {
   margin: 125px 0;
 }
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/images/Background Image.png") no-repeat center;
-  width: 1400px;
+  background-size: cover;
   height: 700px;
   margin: 0 auto;
 
