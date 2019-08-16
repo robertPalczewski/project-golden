@@ -1,9 +1,16 @@
 /* variables */
 $main-font: 'Montserrat', sans-serif;
 $a-transition: .4s all;
+$color-accent: #fed136;
+$color-main: #000;
+$color-second: #777;
 
 body {
   margin: 0;
+}
+
+.container {
+  margin: 125px 0;
 }
 
 header {
@@ -37,7 +44,7 @@ header {
     text-decoration: none;
     text-align: center;
     font-family: $main-font;
-    background-color: #fed136;
+    background-color: $color-accent;
     display: block;
     max-width: 220px;
     padding: 25px;
@@ -76,9 +83,56 @@ nav {
       transition: $a-transition;
 
       &:hover {
-        color: #fed136;
+        color: $color-accent;
         transition: $a-transition;
       }
     }
+  }
+}
+
+section.services {
+  h2, h3, h4 {
+    color: $color-main;
+    text-align: center;
+    font-family: $main-font;
+  }
+
+  h2 {
+    font-size: 44px;
+    font-weight: 900;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-weight: 600;
+    margin-bottom: 100px;
+    color: $color-second;
+
+  }
+
+  span.service-icon {
+    display: block;
+    width: 100px;
+    margin: auto;
+  }
+
+  i {
+    text-align: center;
+    color: $color-accent;
+    display: block;
+    font-size: 50px;
+    border: 5px solid $color-accent;
+    width: 100px;
+    height: 100px;
+    line-height: 60px;
+    padding: 15px;
+    border-radius: 50%;
+  }
+
+  p {
+    text-align: center;
+    font-family: Merriweather serif;
+    color: $color-second;
+    font-size: 1.2rem;
   }
 }
