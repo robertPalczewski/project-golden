@@ -1,0 +1,84 @@
+/* variables */
+$main-font: 'Montserrat', sans-serif;
+$a-transition: .4s all;
+
+body {
+  margin: 0;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/images/Background Image.png") no-repeat center;
+  width: 1400px;
+  height: 700px;
+  margin: 0 auto;
+
+  h1, h2, .about-btn {
+    color: #fff;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: Merriweather serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 44px;
+    margin-top: 190px;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-family: $main-font;
+    font-size: 72px;
+    font-weight: 900;
+    margin-top: 0;
+  }
+
+  a.about-btn {
+    text-decoration: none;
+    text-align: center;
+    font-family: $main-font;
+    background-color: #fed136;
+    display: block;
+    max-width: 220px;
+    padding: 25px;
+    margin: auto;
+
+  }
+}
+
+nav {
+  .logo {
+    margin: 50px 0 0 0;
+    text-align: right;
+  }
+
+  .navigation {
+    float: right;
+  }
+
+  .navigation ul {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 50px 0 0 0;
+    text-align: right;
+
+    li{
+      display: inline-block;
+      margin-right: 25px;
+    }
+
+    li a {
+      text-decoration: none;
+      font-family: $main-font;
+      font-weight: bold;
+      color: #fff;
+      transition: $a-transition;
+
+      &:hover {
+        color: #fed136;
+        transition: $a-transition;
+      }
+    }
+  }
+}
