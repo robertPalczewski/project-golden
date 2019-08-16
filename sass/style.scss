@@ -3,7 +3,7 @@ $main-font: Montserrat, sans-serif;
 $second-font: Merriweather serif;
 $a-transition: .4s all;
 $color-accent: #fed136;
-$color-main: #000;
+$color-main: #222;
 $color-second: #777;
 
 body {
@@ -170,6 +170,45 @@ section.portfolio {
       font-style: italic;
       margin-bottom: 30px;
       color: $color-second;
+    }
+  }
+}
+
+footer {
+  padding: 50px 0;
+
+  .copyright, .social-media {
+    display: inline-block;
+    width: 33%;
+    margin: auto;
+  }
+
+  .social-media ul {
+    padding-inline-start: 0;
+    margin: auto;
+    text-align: center;
+
+    li {
+      font-size: 0;
+      display: inline-block;
+      margin: 3px;
+
+      i {
+        font-size: 16px;
+        color: #fff;
+        background: $color-main;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 50%;
+        transform: scale(1);
+        transition: $a-transition;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: $a-transition;
+        }
+      }
     }
   }
 }
