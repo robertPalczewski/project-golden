@@ -1,5 +1,6 @@
 /* variables */
-$main-font: 'Montserrat', sans-serif;
+$main-font: Montserrat, sans-serif;
+$second-font: Merriweather serif;
 $a-transition: .4s all;
 $color-accent: #fed136;
 $color-main: #000;
@@ -10,7 +11,7 @@ body {
 }
 
 section {
-  margin: 125px 0;
+  padding: 125px 0;
 }
 
 header {
@@ -25,7 +26,7 @@ header {
   }
 
   h2 {
-    font-family: Merriweather serif;
+    font-family: $second-font;
     font-style: italic;
     font-weight: lighter;
     font-size: 44px;
@@ -90,24 +91,24 @@ nav {
   }
 }
 
-section.services {
-  h2, h3, h4 {
+section {
+  .section-title, h3, .section-subtitle {
     color: $color-main;
     text-align: center;
     font-family: $main-font;
   }
 
-  h2 {
+  .section-title {
     font-size: 44px;
     font-weight: 900;
     margin-bottom: 0;
   }
 
-  h4 {
+  .section-subtitle {
     font-weight: 600;
+    font-style: italic;
     margin-bottom: 100px;
     color: $color-second;
-
   }
 
   span.service-icon {
@@ -131,8 +132,44 @@ section.services {
 
   p {
     text-align: center;
-    font-family: Merriweather serif;
+    font-family: $second-font;
     color: $color-second;
     font-size: 1.2rem;
+  }
+}
+
+section.portfolio {
+  background-color: #f7f7f7;
+
+  .row {
+    margin: 50px 0;
+  }
+
+  .portfolio-card {
+    background-color: #fff;
+    padding: 0;
+    margin: auto;
+
+    img {
+      width: 100%;
+    }
+
+    h2, h3 {
+      text-align: center;
+    }
+
+    h2 {
+      font-weight: 900;
+      margin-bottom: 0;
+      font-family: $main-font;
+    }
+
+    h3 {
+      font-family: $second-font;
+      font-weight: 600;
+      font-style: italic;
+      margin-bottom: 30px;
+      color: $color-second;
+    }
   }
 }
